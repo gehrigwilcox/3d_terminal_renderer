@@ -1,0 +1,31 @@
+#include "mathlib.hpp"
+
+float sdf_sphere(Vec3 p, float r);
+float sdf_box(Vec3 p, Vec3 b);
+float round_box(Vec3 p, Vec3 b, float r);
+float box_frame(Vec3 p, Vec3 b, float r);
+float sdf_torus(Vec3 p, Vec2 t);
+float capped_torus(Vec3 p, Vec2 sc, float ra, float rb);
+float link(Vec3 p, float le, float r1, float r2);
+float cylinder(Vec3 p, Vec3 c);
+float cone(Vec3 p, Vec3 c, float h);
+float infinite_cone(Vec3 p, Vec3 c);
+float plane(Vec3 p, Vec3 n, float h);
+float hex_prism(Vec3 p, Vec3 h);
+float capsule(Vec3 p, Vec3 a, Vec3 b, float r);
+float vertical_capsule(Vec3 p, float h, float r);
+float vertical_capped_cylinder(Vec3 p, float r, float h);
+float arbitrary_capped_cylinder(Vec3 p, Vec3 a, Vec3 b, float r);
+float rounded_cylinder(Vec3 p, float ra, float rb, float h);
+float capped_cone(Vec3 p, float h, float r1, float r2);
+float solid_angle(Vec3 p, Vec2 c, float ra);
+float cut_sphere(Vec3 p, float r, float h);
+float cut_hollow_sphere(Vec3 p, float r, float h, float t);
+float sdf_death_star(Vec3 p2, float ra, float rb, float d);
+float round_cone(Vec3 p, float r1, float r2, float h);
+float vesica_segment(Vec3 p, Vec3 a, Vec3 b, float w);
+float rhombus(Vec3 p, float la, float lb, float h, float ra);
+float octahedron(Vec3 p, float s);
+float pyramid(Vec3 p, float h);
+float triangle(Vec3 p, Vec3 a, Vec3 b, Vec3 c);
+float quad(Vec3 p, Vec3 a, Vec3 b, Vec3 c, Vec3 d);

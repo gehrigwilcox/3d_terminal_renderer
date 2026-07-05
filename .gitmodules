@@ -1,0 +1,3 @@
+[submodule "external/lalib"]
+	path = external/lalib
+	url = https://github.com/gehrigwilcox/lalib.git
